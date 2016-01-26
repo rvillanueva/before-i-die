@@ -1,0 +1,15 @@
+<div class="background">
+<div class="container">
+  <br><br>
+  <div class="">
+    <div class="row thing" ng-repeat="thing in awesomeThings | orderBy: 'submitted':true">
+      <div class="col-md-12">
+        {{thing.name}}<button type="button" class="close pull-right" ng-click="deleteThing(thing)" ng-show="isAdmin">&times;</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="login button">
+  <a href="/login">Login</a>
+</div>
